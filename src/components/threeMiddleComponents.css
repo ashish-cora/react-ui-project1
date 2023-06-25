@@ -1,0 +1,20 @@
+.toAddNatureContent img {
+  height: 300px;
+  min-width: 400px;
+  padding: 75px 25px 35px 25px;
+}
+
+.toAddNatureContent p {
+  padding: 5px 25px 5px 25px;
+}
+.minus {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 25px;
+}
+
+.toAddNatureContent div {
+  padding: 5px 25px 5px 25px;
+  font-weight: bolder;
+  font-size: larger;
+}

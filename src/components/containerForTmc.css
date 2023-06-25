@@ -1,0 +1,166 @@
+.wrapperNature {
+  max-width: 1500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.placesYouTravelled {
+  margin-top: 25px;
+  /* width: 100%; */
+  display: flex;
+  min-height: 225px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.placesYouTravelled p {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-top: 30px;
+}
+
+.lineAndOnePicDiv {
+  margin-top: 150px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1500px;
+  justify-content: space-around;
+}
+
+.plusIcon {
+  margin-top: 0px;
+}
+
+.picDiv {
+  width: 25%;
+}
+.picDiv img {
+  min-height: 205px;
+}
+
+.wrapperForLeftDiv {
+  display: flex;
+  flex-direction: column;
+  /* min-width: 800px; */
+}
+
+.horizontal-rule {
+  border: none;
+  height: 3px;
+  margin-top: 15px;
+  background-color: black;
+  width: 500px;
+  min-width: 600px;
+}
+
+.para {
+  display: flex;
+  justify-content: center;
+  max-width: 1500px;
+}
+.para p {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.wrapperForUser {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.leftArrow {
+  margin-top: 120px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+}
+
+.left-form {
+  width: 30%;
+}
+
+.left-form h1 {
+  margin-bottom: 12px;
+}
+.wrapperForForm {
+  display: flex;
+  max-width: 1500px;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+
+.formPic {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.formPic img {
+  height: 350px;
+}
+
+.formElements {
+  height: 40px;
+  margin: 5px;
+  width: 300px;
+}
+#buttonSubmit {
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  background-color: rgb(199, 197, 197);
+  height: 300px;
+}
+
+.left {
+  display: flex;
+
+  width: 30%;
+  padding-top: 90px;
+  justify-content: center;
+}
+.right {
+  width: 70%;
+}
+.rightTop {
+  display: flex;
+  margin-top: 30px;
+  height: 20%;
+}
+.rightBot {
+  height: 80%;
+}
+
+.rightPara {
+  height: 20px;
+  width: 250px;
+  /* margin-top: 5px; */
+}
+
+.firstPart {
+  display: flex;
+  flex-wrap: wrap;
+  height: 60%;
+}
+
+.secondPart {
+  justify-content: center;
+  height: 40%;
+  margin-top: 30px;
+}

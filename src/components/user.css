@@ -1,0 +1,18 @@
+.box {
+  display: flex;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 250px;
+  height: 340px;
+  align-items: center;
+  padding-top: 70px;
+  flex-direction: column;
+  max-width: 1500px;
+}
+.box h3 {
+  padding: 29px;
+}
+.box p {
+  text-align: center;
+  padding: 6px;
+}

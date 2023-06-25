@@ -1,0 +1,25 @@
+.horizontal-rule {
+  border: none;
+  height: 3px;
+  margin-top: 15px;
+  background-color: black;
+  width: 500px;
+  min-width: 600px;
+}
+
+.lineDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.paragraphAndPlus {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.paragraphAndPlus p {
+  margin-right: 120px;
+}
