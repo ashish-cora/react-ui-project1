@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import NavigationTab from "./components/NavigationTab";
 import ContainerForTmc from "./components/ContainerForTmc";
 
+
 function App() {
   const navigationArray = [
     { title: "Home" },
@@ -12,9 +13,10 @@ function App() {
   ];
   return (
     <div className="entirePage">
-      <NavigationTab data={navigationArray} />;
+      <NavigationTab data={navigationArray} />
       <Home />
       <ContainerForTmc />
+      
     </div>
   );
 }

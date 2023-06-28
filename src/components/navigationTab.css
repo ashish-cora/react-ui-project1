@@ -4,8 +4,20 @@
 }
 
 .navigationAppendDiv {
-  background-color: blue;
   min-width: 1100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.navigationButton {
+  padding: 8px;
+  border: 3px solid black;
+  border-radius: 5px;
+  height: 40px;
+  font-size: medium;
+}
+
+.secondDiv button:hover {
+  cursor: pointer;
 }

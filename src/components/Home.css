@@ -1,39 +1,51 @@
-.home {
-  background-color: blueviolet;
+.wrapperForHome {
   display: flex;
-  max-height: 500px;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  max-height: 400px;
   width: 1100px;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 50px;
+  margin-top: 30px;
 }
 .homeLeft {
   display: flex;
   flex-direction: column;
   width: 30%;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .homeLeft h1 {
-  text-align: justify;
-  font-weight: 200;
+  display: flex;
+  justify-content: flex-start;
+  /* text-align: justify; */
+  font-weight: 700;
 }
 
 .homeLeft p {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-left: 45px;
+
   padding-right: 45px;
   text-align: justify;
 }
 
 .homeLeft button {
   max-height: 35px;
-  max-width: 170px;
+  min-width: 290px;
   background-color: black;
   color: white;
   padding: 9px;
   border-radius: 4px;
+  margin-left: 0;
+}
+
+.homeLeft button:hover {
+  cursor: pointer;
 }
 
 /* #heading-homeLeft {
@@ -41,15 +53,16 @@
 
 .homeRight {
   display: flex;
+
   margin: auto;
   /* justify-content: flex-end; */
   width: 70%;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 .homeRight img {
   width: 700px;
-  height: 400px;
+  max-height: 350px;
 }
 
 h1 {
@@ -58,7 +71,8 @@ h1 {
 }
 
 .kaaloDiv {
-  margin-top: 50px;
+  margin-top: 125px;
+  margin-bottom: 125px;
   display: flex;
   min-height: 300px;
   background-color: rgb(29, 29, 29);
@@ -72,7 +86,7 @@ h1 {
 .kaaloDiv p {
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: justify;
+  text-align: center;
 }
 
 .kaaloDiv button {

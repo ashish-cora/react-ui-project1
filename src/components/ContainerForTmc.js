@@ -2,21 +2,55 @@ import User from "./User";
 import ThreeMiddleComponents from "./ThreeMiddleComponents";
 import "./containerForTmc.css";
 import { faPlaneUp } from "@fortawesome/free-solid-svg-icons";
-import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
-import { faRightLong } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HorizontalRule from "./HorizontalRule";
 import Pic from "./Pic";
+import React, { useState } from "react";
+import { Carousel as ReactCarousel } from "@trendyol-js/react-carousel";
 
 const ContainerForTmc = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [description, setDescription] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("First Name:", firstName);
+    console.log("Last Name:", lastName);
+    console.log("Email:", email);
+    console.log("Description:", description);
+  };
+
   const titleArrayForTmc = [
     { title: "Hiking man", key: "1" },
     { title: "Nature", key: "2" },
     { title: "Arko man", key: "3" },
   ];
 
+  const arrayNames = [
+    { name: "Ashish", key: "1" },
+    { name: "Ruman", key: "2" },
+    { name: "Smarika", key: "3" },
+    { name: "Bisham", key: "4" },
+    { name: "Himal", key: "5" },
+    { name: "Bihan", key: "6" },
+  ];
+
+  // const consoleKhol = (e) => {
+  //   console.log("event target", e.target.value);
+  // };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <>
+    <div className="cftmc">
       <div className="wrapperNature">
         {titleArrayForTmc.map((items) => (
           <ThreeMiddleComponents data={items} />
@@ -40,44 +74,76 @@ const ContainerForTmc = () => {
       </div>
 
       <div className="para">
-        <p>Here's what they have to say...</p>
-      </div>
-      <div className="wrapperForUser">
-        <FontAwesomeIcon className="leftArrow" icon={faLeftLong} size="3x" />
-        <User />
-        <User />
-        <User />
-        <FontAwesomeIcon className="leftArrow" icon={faRightLong} size="3x" />
+        <p>
+          Here's what they <br></br> have to say...
+        </p>
       </div>
 
+      <div className="carousel-wrapper">
+        <ReactCarousel
+          className="userCarousel"
+          responsive={true}
+          show={2.8}
+          slide={1}
+          swiping={true}
+          leftArrow={
+            <div className="wrapper-for-arrow arrow-left">
+              <FontAwesomeIcon className="arrow" icon={faArrowLeft} />
+            </div>
+          }
+          rightArrow={
+            <div className="wrapper-for-arrow arrow-right">
+              <FontAwesomeIcon className="arrow" icon={faArrowRight} />
+            </div>
+          }
+        >
+          {arrayNames.map((saman) => (
+            // {console.log('saman',saman)}
+            <div>
+              <User info={saman} />
+            </div>
+          ))}
+        </ReactCarousel>
+      </div>
       <div className="wrapperForForm">
         <div className="left-form">
           <h1>Be updated!</h1>
-          <form className="form">
+          <form className="form" onSubmit={handleSubmit}>
             <input
+              onChange={(event) => {
+                setFirstName(event.target.value);
+              }}
               className="formElements"
-              placeholder="First Name*"
+              placeholder="&nbsp;&nbsp;&nbsp;First Name*"
               type="text"
             />
             <input
+              onChange={(event) => {
+                setLastName(event.target.value);
+              }}
               className="formElements"
-              placeholder="Last Name*"
+              placeholder="&nbsp;&nbsp;&nbsp;Last Name*"
               type="text"
             />
             <input
+              onChange={(event) => {
+                setEmail(event.target.value);
+              }}
               className="formElements"
-              placeholder="Email Subject*"
+              placeholder="&nbsp;&nbsp;&nbsp;Email Subject*"
               type="email"
             />
-            <input
+            <textarea
+              onChange={(event) => {
+                setDescription(event.target.value);
+              }}
               className="formElements"
-              placeholder="Write something here..."
-              type="textarea"
+              placeholder="&nbsp;&nbsp;Write something here..."
             />
+            <button className="formElements" id="buttonSubmit" type="submit">
+              Submit Email
+            </button>
           </form>
-          <button className="formElements" id="buttonSubmit" type="submit">
-            Submit Email
-          </button>
         </div>
         <div className="formPic">
           <Pic />
@@ -140,7 +206,7 @@ const ContainerForTmc = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ThreeMiddleComponents = (props) => {
   let imageElement;
-  console.log("title pic", props.data.title);
+  // console.log("title pic", props.data.title);
   if (props.data.title === "Hiking man") {
     imageElement = <img src="/manHiking.jpg " alt="man-hiking" />;
   } else if (props.data.title === "Nature") {
@@ -17,7 +17,6 @@ const ThreeMiddleComponents = (props) => {
   return (
     <div className="toAddNatureContent">
       {imageElement}
-      {/* <img src="./manHiking.jpg" alt="man-hiking"></img> */}
 
       <FontAwesomeIcon className="minus" icon={faMinus} size="2x" />
       <div className="titleNature">{props.data.title}</div>

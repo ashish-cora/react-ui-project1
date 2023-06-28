@@ -1,14 +1,20 @@
+.cftmc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .wrapperNature {
-  max-width: 1500px;
+  min-width: 1100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto;
 }
 
 .placesYouTravelled {
-  margin-top: 25px;
-  /* width: 100%; */
+  margin-top: 190px;
+  margin-bottom: 40px;
+  width: 100%;
   display: flex;
   min-height: 225px;
   justify-content: flex-end;
@@ -24,23 +30,25 @@
 }
 
 .lineAndOnePicDiv {
+  min-width: 1100px;
   margin-top: 150px;
   margin-bottom: 200px;
   display: flex;
   flex-direction: row;
-  max-width: 1500px;
-  justify-content: space-around;
+
+  justify-content: space-between;
 }
 
 .plusIcon {
   margin-top: 0px;
 }
 
-.picDiv {
-  width: 25%;
-}
+/* .picDiv {
+  width: 35%;
+} */
 .picDiv img {
   min-height: 205px;
+  max-width: 300px;
 }
 
 .wrapperForLeftDiv {
@@ -64,18 +72,21 @@
   max-width: 1500px;
 }
 .para p {
-  font-weight: bolder;
-  font-size: xx-large;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
 }
 .wrapperForUser {
+  min-width: 1100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 30px;
 }
 
 .leftArrow {
   margin-top: 120px;
+  /* margin-right: 120px; */
 }
 
 .form {
@@ -93,26 +104,33 @@
 }
 .wrapperForForm {
   display: flex;
-  max-width: 1500px;
+  min-width: 1100px;
   flex-direction: row;
-  margin-top: 100px;
-  justify-content: space-evenly;
+  margin-top: 170px;
+  justify-content: space-between;
+}
+
+.form textarea {
+  height: 120px;
 }
 
 .formPic {
   display: flex;
-  width: 50%;
+  /* width: 50%; */
+  width: 680px;
   align-items: center;
 }
 
 .formPic img {
-  height: 350px;
+  height: 440px;
 }
 
 .formElements {
   height: 40px;
   margin: 5px;
   width: 300px;
+  border: 2px solid black;
+  border-radius: 6px;
 }
 #buttonSubmit {
   margin-top: 40px;
@@ -123,16 +141,16 @@
 .footer {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: 200px;
+  margin-bottom: 0;
   background-color: rgb(199, 197, 197);
-  height: 300px;
+  height: 400px;
 }
 
 .left {
   display: flex;
-
   width: 30%;
-  padding-top: 90px;
+  padding-top: 70px;
   justify-content: center;
 }
 .right {
@@ -140,27 +158,73 @@
 }
 .rightTop {
   display: flex;
-  margin-top: 30px;
-  height: 20%;
+  margin-top: 75px;
+  height: 15%;
 }
 .rightBot {
   height: 80%;
 }
 
-.rightPara {
-  height: 20px;
-  width: 250px;
-  /* margin-top: 5px; */
-}
-
 .firstPart {
   display: flex;
   flex-wrap: wrap;
-  height: 60%;
+  height: 40%;
+}
+
+.rightPara {
+  height: 20px;
+  width: 200px;
+  /* margin-top: 5px; */
 }
 
 .secondPart {
   justify-content: center;
   height: 40%;
   margin-top: 30px;
+  margin-left: 35px;
+}
+
+.bairaKoWrapperForUser {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+}
+
+.wrapperForUser {
+  max-width: 1100px;
+}
+
+.wrapper-for-arrow {
+  border: 2px solid black;
+  padding: 9px;
+  border-radius: 4px;
+}
+.wrapper-for-arrow .arrow {
+  transform: scale(2, 2);
+}
+.wrapper-for-arrow.arrow-left {
+  margin-right: -10px;
+  background: white;
+  z-index: 10;
+  position: relative;
+}
+
+.wrapper-for-arrow.arrow-right {
+  margin-left: -17px;
+  background: white;
+  z-index: 10;
+  position: relative;
+}
+
+.userCarousel {
+  width: 1100px !important;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

@@ -1,20 +1,26 @@
+.toAddNatureContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 300px;
+}
+
 .toAddNatureContent img {
-  height: 300px;
-  min-width: 400px;
-  padding: 75px 25px 35px 25px;
+  height: 160px;
+  min-width: 300px;
+  /* padding: 0; */
 }
 
 .toAddNatureContent p {
-  padding: 5px 25px 5px 25px;
+  padding-top: 15px;
 }
 .minus {
   display: flex;
   justify-content: flex-start;
-  padding-left: 25px;
 }
 
 .toAddNatureContent div {
-  padding: 5px 25px 5px 25px;
   font-weight: bolder;
   font-size: larger;
 }

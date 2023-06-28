@@ -1,7 +1,6 @@
 .horizontal-rule {
   border: none;
   height: 3px;
-  margin-top: 15px;
   background-color: black;
   width: 500px;
   min-width: 600px;
@@ -11,8 +10,8 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: center;
 }
+
 .paragraphAndPlus {
   margin-top: 10px;
   display: flex;
